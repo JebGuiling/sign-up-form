@@ -23,8 +23,12 @@ img {
   max-inline-size: 100%;
 }
 @font-face {
-    font-family: norse-bold;
-    src: url(Norse-Bold.otf);
+    font-family: "norse-bold";
+    src: url(norse-bold-webfont.woff),
+         url(norse-bold-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body{
@@ -46,9 +50,40 @@ body{
     height: 100%;
     width: 40%;
     background-image: url(background.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
 }
+.background-logo{
+    position: absolute;
+    top: 20%;
+    height: 150px;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+}
+.background-image{
+    height: 100%;
+    width: 100%;
+}
+.logo-container{
+    display: flex;
+    position:absolute;
+    top: 22%;
+}
+
 .brand-name{
-    font-size: 16px;
-    font-style: norse-bold;
+    font-size: 90px;
+    font-family: "norse-bold";
     color: white;
+}
+a{
+  color: white;
+}
+.credits{
+  position: absolute;
+  top: 97%;
+  color: white;
 }
