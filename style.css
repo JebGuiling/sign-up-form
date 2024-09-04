@@ -1,0 +1,54 @@
+@import "modern-normalize";
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-container{
+    height: 100%;
+    width: 80%;
+    display: flex;
+
+
+}
+.container-left{
+    height: 100%;
+    width: 40%;
+    background-image: url(background.jpg);
+}
+.brand-name{
+    font-size: 16px;
+    font-style: norse-bold;
+    color: white;
+}
