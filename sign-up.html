@@ -44,7 +44,7 @@
                         </div>
                         <div class="form-input">
                             <label for="user-password">PASSWORD</label>
-                            <input type="password" id="user-password" name="password">
+                            <input type="password" id="user-password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
                         </div>
                     </div>
                     <div class="form-row-2">
@@ -58,7 +58,7 @@
                         </div>
                         <div class="form-input">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirmpassword">
+                            <input type="password" id="confirm-password" name="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
                         </div>
                     </div>
                     <div class="bottom">

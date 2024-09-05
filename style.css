@@ -2,6 +2,7 @@
 
 :root {
   line-height: 1.5;
+
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
@@ -112,6 +113,8 @@ input{
   width: 190px;
   margin-left: 30px;
   border: 1px solid #E5E7EB;
+  outline: none;
+
   }
 .top{
   width: 100%;
@@ -189,3 +192,14 @@ button{
   color: #596D48;
 }
 
+input:focus{
+  border:1px solid blue;
+  box-shadow: 0 4px 10px -2px gray;
+
+}
+
+input:invalid{
+  border:1px solid red;
+  box-shadow: 0 4px 10px -2px gray;
+
+}
